@@ -42,10 +42,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T          &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G          &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&td0       &kp Z  &kp X  &kp C     &kp V  &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE    &lt 3 ENTER  &mo 2  &kp RALT
+&kp TAB         &kp Q  &kp W  &kp E         &kp R      &kp T                      &kp Y        &kp U  &kp I      &kp O     &kp P         &kp BSPC
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F      &kp G                      &kp H        &kp J  &kp K      &kp L     &kp UP_ARROW  &kp DOT
+&kp LCTRL       &kp Z  &kp X  &kp C         &kp V      &kp B                      &kp N        &kp M  &kp COMMA  &kp LEFT  &kp DOWN      &kp RIGHT
+                              &kp LEFT_ALT  &kp SPACE  &mt LG(SPACE) LA(GRAVE)    &lt 3 ENTER  &mo 1  &mo 2
             >;
         };
 
@@ -86,10 +86,19 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4      &kp F5         &kp F6       &kp F7  &kp F8  &kp F9  &kp F10          &kp F11
-&trans  &trans  &trans  &trans  &sys_reset  &bootloader    &bootloader  &trans  &trans  &trans  &kp PRINTSCREEN  &kp F12
-&trans  &trans  &trans  &trans  &trans      &trans         &trans       &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                        &trans  &trans      &trans         &trans       &trans  &trans
+&rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &bt BT_CLR
+&rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD    &bootloader   &trans        &trans        &trans        &kp PRINTSCREEN  &kp F12
+&trans           &trans           &trans           &trans           &trans           &trans             &trans        &trans        &trans        &trans        &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                                   &trans           &trans           &trans             &trans        &trans        &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
