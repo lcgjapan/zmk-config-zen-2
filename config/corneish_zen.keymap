@@ -36,21 +36,29 @@
         combo1 {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
+            layers = <0>;
+            timeout-ms = <50>;
         };
 
         combo2 {
             bindings = <&kp LEFT_GUI>;
             key-positions = <36 37>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
 
         combo3 {
             bindings = <&kp SEMICOLON>;
             key-positions = <22 23>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
 
         combo4 {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <35 23>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
     };
 
@@ -92,7 +100,7 @@
         };
 
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "Function";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -109,7 +117,7 @@
         };
 
         layer_3 {
-            display-name = "Fn";
+            display-name = "LED & BLE";
             bindings = <
 &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI   &rgb_ug RGB_BRI    &rgb_ug RGB_SPI      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD   &rgb_ug RGB_BRD    &rgb_ug RGB_SPD      &bootloader   &trans        &trans        &trans        &none         &none
